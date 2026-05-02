@@ -38,7 +38,7 @@ with col1:
 with col2:
     img_file = st.file_uploader("🖋️ Upload Scan TTD Online", type=["png", "jpg", "jpeg"])
 
-expert_name = st.text_input("👤 Nama Lengkap Expert Panelis", placeholder="Contoh: Prof. Dr. Andra Raditya, M.Psi.")
+expert_name = st.text_input("👤 Nama Lengkap Expert Panelis", placeholder="Contoh: Prof. Dr. Cristiano Ronaldo, M.Psi.")
 
 st.divider()
 
