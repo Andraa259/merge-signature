@@ -21,7 +21,7 @@ Selamat datang! Gunakan alat ini untuk mengisi **Tanggal**, **Tanda Tangan**, da
 """)
 
 # --- Seksi Informasi & Persyaratan ---
-with st.expander("ℹ️ Persyaratan & Tips Hasil Terbaik", expanded=True):
+with st.expander("ℹ️ Persyaratan & Tips Hasil Terbaik", expanded=False):
     st.markdown("""
     *   **Background TTD:** Sangat disarankan menggunakan format **PNG Transparan** agar hasil terlihat menyatu dengan dokumen.
     *   **Warna Putih:** Jika terpaksa menggunakan background putih, pastikan pencahayaan foto merata.
