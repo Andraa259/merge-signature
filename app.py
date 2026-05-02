@@ -4,14 +4,20 @@ from docx.shared import Cm, Pt
 from datetime import datetime
 import io
 import time
+import pytz
 
 # Konfigurasi Halaman
 st.set_page_config(page_title="Expert Signature Pro", page_icon="✍️")
 
 def get_indo_date():
-    months = {1: "Januari", 2: "Februari", 3: "Maret", 4: "April", 5: "Mei", 6: "Juni", 
-              7: "Juli", 8: "Agustus", 9: "September", 10: "Oktober", 11: "November", 12: "Desember"}
-    now = datetime.now()
+    months = {
+        1: "Januari", 2: "Februari", 3: "Maret", 4: "April", 
+        5: "Mei", 6: "Juni", 7: "Juli", 8: "Agustus", 
+        9: "September", 10: "Oktober", 11: "November", 12: "Desember"
+    }
+    # Memaksa sistem mengambil waktu Jakarta (WIB)
+    tz = pytz.timezone('Asia/Jakarta')
+    now = datetime.now(tz)
     return f"{now.day} {months[now.month]} {now.year}"
 
 # --- Tampilan Header ---
